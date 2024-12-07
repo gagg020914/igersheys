@@ -2,8 +2,10 @@ import Scene from "./Game/Scene";
 
 function App() {
   return (
-    <div className="canva">
-      <Scene />
+    <div className="body">
+      <div className="canva">
+        <Scene />
+      </div>
     </div>
   );
 }

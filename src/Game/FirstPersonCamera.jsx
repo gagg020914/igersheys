@@ -14,11 +14,11 @@ export default function FirstPersonCamera() {
     top: false,
     button: false,
   });
-  const speed = 0.1;
+  const speed = 0.05;
   const mode = true;
 
   useEffect(() => {
-    camera.position.set(4.5, 1, 4.5);
+    camera.position.set(4.5, 1, 10);
     const handleKeyDown = (e) => {
       if (e.key === "w") setMovement((prev) => ({ ...prev, forward: true }));
       if (e.key === "s") setMovement((prev) => ({ ...prev, backward: true }));
