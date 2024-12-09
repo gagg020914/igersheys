@@ -20,18 +20,47 @@ export default function Scene() {
       <ambientLight intensity={0.8} />
       <pointLight position={[10, 10, 10]} />
       <Ground />
-      <ImageIn3D img={ian} xyz={[4.5, 2, 0]} scale={[3, 3, 3]} />
-      <Papper svgCode={svgCode} position={[4.5, 4.5, -0.5]} />
-      <Papper svgCode={svgCode} position={[4.5, 4.5, 0.5]} />
-      <Papper svgCode={svgCode} position={[4.5, 4.5, 1.5]} />
-      <Papper svgCode={svgCode} position={[4.5, 4.5, 2.5]} />
-      <Papper svgCode={svgCode} position={[4.5, 4.5, 3.5]} />
-      <Papper svgCode={svgCode} position={[4.5, 4.5, 4.5]} />
-      <Papper svgCode={svgCode} position={[4.5, 4.5, 5.5]} />
-      <Papper svgCode={svgCode} position={[4.5, 4.5, 6.5]} />
-      <Papper svgCode={svgCode} position={[4.5, 4.5, 7.5]} />
-      <Papper svgCode={svgCode} position={[4.5, 4.5, 8.5]} />
-      <Papper svgCode={svgCode} position={[4.5, 4.5, 9.5]} />
+      {/* <ImageIn3D img={ian} xyz={[4.5, 2, 0]} scale={[3, 3, 3]} /> */}
+      <Papper
+        svgCode={svgCode}
+        position={[4.5, 4.5, 4.5]}
+        rotation={[0, (Math.PI / 8) * 1, 0]}
+      />
+      <Papper
+        svgCode={svgCode}
+        position={[4.5, 4.5, 4.5]}
+        rotation={[0, (Math.PI / 8) * 2, 0]}
+      />
+      <Papper
+        svgCode={svgCode}
+        position={[4.5, 4.5, 4.5]}
+        rotation={[0, (Math.PI / 8) * 3, 0]}
+      />
+      <Papper
+        svgCode={svgCode}
+        position={[4.5, 4.5, 4.5]}
+        rotation={[0, (Math.PI / 8) * 4, 0]}
+      />
+      <Papper
+        svgCode={svgCode}
+        position={[4.5, 4.5, 4.5]}
+        rotation={[0, (Math.PI / 8) * 5, 0]}
+      />
+      <Papper
+        svgCode={svgCode}
+        position={[4.5, 4.5, 4.5]}
+        rotation={[0, (Math.PI / 8) * 6, 0]}
+      />
+      <Papper
+        svgCode={svgCode}
+        position={[4.5, 4.5, 4.5]}
+        rotation={[0, (Math.PI / 8) * 7, 0]}
+      />
+      <Papper
+        svgCode={svgCode}
+        position={[4.5, 4.5, 4.5]}
+        rotation={[0, (Math.PI / 8) * 8, 0]}
+      />
 
       <FirstPersonCamera />
     </Canvas>

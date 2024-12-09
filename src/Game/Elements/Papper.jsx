@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import * as THREE from "three";
 
-export default function Papper({ svgCode, position }) {
+export default function Papper({ svgCode, position, rotation }) {
   const [texture, setTexture] = useState(null);
 
   useEffect(() => {
@@ -34,7 +34,7 @@ export default function Papper({ svgCode, position }) {
   if (!texture) return null;
 
   return (
-    <mesh position={position}>
+    <mesh position={position} rotation={rotation}>
       <planeGeometry args={[10, 10]} />
       <meshBasicMaterial
         map={texture}
