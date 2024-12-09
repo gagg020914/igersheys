@@ -14,7 +14,7 @@ export default function FirstPersonCamera() {
     top: false,
     button: false,
   });
-  const speed = 0.05;
+  const speed = 0.15;
   const mode = true;
 
   useEffect(() => {

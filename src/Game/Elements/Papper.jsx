@@ -40,6 +40,7 @@ export default function Papper({ svgCode, position }) {
         map={texture}
         transparent={true}
         side={THREE.DoubleSide}
+        alphaTest={0.5}
       />
     </mesh>
   );
